@@ -145,6 +145,36 @@ h3 {
       margin-bottom: 50px;
     }
   }
+  .work-section {
+    .work {
+      border-left: 2px solid $borders-color;
+      padding-left: 20px;
+      padding-top: 10px;
+      ul{
+        list-style-position: inside;
+      }
+    }
+    .time {
+      padding-top: 10px;
+      text-align: left;
+    }
+    h4 {
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: -($dot-size/2 + 1px);
+        width: $dot-size;
+        height: $dot-size;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        background: $decoration-color;
+
+      }
+    }
+  }
   .education-section {
     .school {
       border-left: 2px solid $borders-color;

@@ -6854,6 +6854,27 @@ h3 {
     .right-column .lm .address {
       margin-top: 50px;
       margin-bottom: 50px; }
+  .right-column .work-section .work {
+    border-left: 2px solid #bdbdbd;
+    padding-left: 20px;
+    padding-top: 10px; }
+    .right-column .work-section .work ul {
+      list-style-position: inside; }
+  .right-column .work-section .time {
+    padding-top: 10px;
+    text-align: left; }
+  .right-column .work-section h4:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: -8.5px;
+    width: 15px;
+    height: 15px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #9D0A10; }
   .right-column .education-section .school {
     border-left: 2px solid #bdbdbd;
     padding-left: 20px;
