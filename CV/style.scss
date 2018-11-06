@@ -83,12 +83,23 @@ h3 {
 }
 
 .left-column {
+
   .section:first-child {
     padding-bottom: 30px;
   }
   .about-section {
     background: $secondary-bg-color;
     color: $secondary-font-color;
+    &__img {
+      width: 100%;
+      //max-width: 400px;
+      margin: auto;
+      padding: 30px 0px;
+      text-align: center;
+      img{
+        width: 100%;
+      }
+    }
     h2 {
       position: relative;
       background: $decoration-color;
@@ -116,31 +127,36 @@ h3 {
 
 .right-column {
   text-align: justify;
-  background: $bg-color;
+  background: #eee;
+  background: url("img/white-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+
   &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    opacity: 0.2;
-    background: url("img/triangles-1430105.png");
-    background-size: cover;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    ////content: '';
+    //display: block;
+    //position: absolute;
+    //left: 0;
+    //top: 0;
+    //width: 100%;
+    //height: 100%;
+    //z-index: 0;
+    //opacity: 0.8;
+    //background: url("img/2280.jpg");
+    //background-size: cover;
+    ////-webkit-filter: grayscale(100%) blur(0.5px); /* Safari 6.0 - 9.0 */
+    ////filter: grayscale(100%) blur(0.5px);
   }
   .section {
     padding-left: 40px;
+    z-index: 5;
   }
-  .lm{
+  .lm {
     padding: 0px 60px;
-    .date{
+    .date {
       margin-top: 50px;
     }
-    .address{
+    .address {
       margin-top: 50px;
       margin-bottom: 50px;
     }
@@ -150,7 +166,7 @@ h3 {
       border-left: 2px solid $borders-color;
       padding-left: 20px;
       padding-top: 10px;
-      ul{
+      ul {
         list-style-position: inside;
       }
     }
@@ -215,7 +231,7 @@ h3 {
   .footer-section {
     border-top: 1px solid $borders-color;
     padding-top: 20px;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 
